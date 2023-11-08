@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Create</title>
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <img class="background" src="static/img/yellow.png" alt="">
+    <img class="fullscreen-image" src="static/img/design4.png" alt="Full Screen Image">
+    <input id="custom-input" class="custom-input" type="text" placeholder="Enter your keywords">
+    <img class="treeImage" src="static/downloaded_image_0.jpg" alt="">
+    <img id="robot" src="static/img/18274.png" alt="">
+    <img id="heart" src="static/img/red.png" alt="">
+    <p id="load">Loading...</p>
+    <label class="selectbox-001">
+        <select id="style-select">
+            <option>STYLE</option>
+            <option></option>
+            <option>illustration</option>
+            <option>stencil art</option>
+            <option>crayon art</option>
+            <option>chalk art</option>
+            <option>oil paintings</option>
+            <option>ballpoint pen art</option>
+            <option>colored pencil</option>
+            <option>watercolor</option>
+            <option>pastels</option>
+            <option>woodcut</option>
+            <option>charcoal</option>
+            <option>storybook illustration</option>
+            <option>vintage illustration from 1980s</option>
+            <option>anime style</option>
+            <option>manga style</option>
+            <option>kawaii</option>
+            <option>pixel art</option>
+            <option>sticker art</option>
+            <option>surrealism</option>
+            <option>Dadaism</option>
+            <option>orphism</option>
+            <option>cubism</option>
+            <option>suprematism</option>
+            <option>realism</option>
+            <option>impressionism</option>
+            <option>Art Nouveau</option>
+            <option>baroque painting</option>
+            <option>ukiyo-e</option>
+            <option>style of Vincent van Gogh</option>
+            <option>style of Alphonse Mucha</option>
+            <option>as a comic book drawing</option>
+            <option>full color photo</option>
+            <option>Polaroid</option>
+            <option>infrared photography</option>
+            <option>wide-angle lens</option>
+            <option>warm lighting</option>
+            <option>back lighting</option>
+            <option>golden hour</option>
+            <option>blue hour</option>
+        </select>
+    </label>
+
+    <label class="selectbox-002">
+        <select id="quality-select">
+            <option>QUALITY</option>
+            <option></option>
+            <option>masterpiece</option>
+            <option>high quality</option>
+            <option>epic high quality</option>
+            <option>best quality</option>
+            <option>detailed</option>
+            <option>highly detailed</option>
+            <option>insanely detailed</option>
+            <option>ultra detailed</option>
+            <option>hyper realistic</option>
+        </select>
+    </label>
+    <button class="btn btn--orange" onclick="downloadGeneratedImage()">Create!</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="static/download.js"></script>
+</body>
+
+</html>

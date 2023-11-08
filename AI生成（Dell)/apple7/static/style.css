@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+  }
+  
+  .fullscreen-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .custom-input {
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    width: 450px;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    z-index:11;
+  }
+  
+  .custom-input:focus {
+    outline: none;
+  }
+  
+  .selectbox-001 {
+    position: absolute;
+    top: 28%;
+    left: 11%;
+    display: inline-flex;
+    align-items: center;
+    z-index:12;
+  }
+  
+  .selectbox-001::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+  }
+  
+  .selectbox-001 select {
+    appearance: none;
+    width: 180px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    border-bottom: 2px solid #000000;
+    background-color: #fff;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .selectbox-001 select:focus {
+    outline: none;
+  }
+  
+  .selectbox-002 {
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    display: inline-flex;
+    align-items: center;
+    z-index:12;
+  }
+  
+  .selectbox-002::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+  }
+  
+  .selectbox-002 select {
+    appearance: none;
+    width: 180px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    border-bottom: 2px solid #000000;
+    background-color: #fff;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .selectbox-002 select:focus {
+    outline: none;
+  }
+  
+  /* ボタンのスタイル */
+  .btn {
+    position: absolute;
+    top: 60%;
+    /* 好きな位置に調整 */
+    left: 34.5%;
+    /* 好きな位置に調整 */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px 5px 1px 5px
+  }
+  
+  .btn--orange {
+    color: black;
+  }
+  
+  .btn--orange:hover {
+    color: red;
+    border-bottom: 3px solid red;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index:12;
+  }
+  
+  .treeImage {
+    position: absolute;
+    top: 50%;
+    /* 好きな位置に調整 */
+    left: 73%;
+    /* 好きな位置に調整 */
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    max-width: 700px;
+    /* 画像の最大幅を設定 */
+    height: auto;
+    /* 高さを自動調整してアスペクト比を保持 */
+    border: solid 10px white;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* .fullscreen-image,
+  .custom-input,
+  .treeImage,
+  .selectbox-001,
+  .selectbox-002,
+  .btn {
+    display: none;
+  } */
+  
+  #robot,
+  #heart,
+  #load {
+    opacity: 0;
+  }
+  
+  #robot {
+    position: absolute;
+    top: 67%;
+    /* 好きな位置に調整 */
+    left: 50%;
+    /* 好きな位置に調整 */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    max-width: 600px;
+    /* 画像の最大幅を設定 */
+    height: auto;
+  }
+  
+  #heart {
+    position: absolute;
+    top: 79%;
+    /* 好きな位置に調整 */
+    left: 50%;
+    /* 好きな位置に調整 */
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    max-width: 190px;
+    /* 画像の最大幅を設定 */
+    height: auto;
+  }
+  
+  #load {
+    position: absolute;
+    top: 20%;
+    /* 好きな位置に調整 */
+    left: 53%;
+    /* 好きな位置に調整 */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 120px;
+    letter-spacing: 0.1em;
+  }
+  
+  @keyframes heart {
+    100% {
+      transform: translateY(100%);
+    }
+  }
